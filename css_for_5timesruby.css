@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.head-guide{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: rgba(95,95,95,0.1) 1px solid;
+}
+
+.left-part{
+    height: 70px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+.left-part a{
+    display: flex;
+    align-items: center;
+}
+.left-part a img{ 
+    height: 24px;
+    margin-right: 5px;
+}
+
+.left-part a{ 
+    line-height: 70px;
+    margin-left: 5px;
+    color: rgb(217,8,69);
+}
+
+.right-part{
+    width: 700px;
+    margin: 35px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-item{
+    line-height: 70px;
+    color: rgb(118, 118, 118);
+}
+.list-item:hover{
+    color: rgb(217, 8, 69);
+}
+.ruby{
+    width: 23px;
+    height: 23px;
+    vertical-align: baseline;
+    margin: 0px 0px -5px -0px;
+}
+.orientation{
+    width: 35px;
+    height: 35px;
+    vertical-align: baseline;
+    margin: 0px -10px -11px -0px;
+}
+.thunder{
+    width: 15px;
+    height: 15px;
+    vertical-align: baseline;
+    margin: 0px -4px -3px -0px;
+    opacity: 0.5;
+}
+.n-mark{
+    width: 15px;
+    position: relative;
+    animation-name: up-and-down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes up-and-down{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 3px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+.banner{
+    width: 100%;
+    height: 465px;
+}
+.banner img{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 40px 0px 40px 0px;
+}
+
+
+.about-title h1{
+    text-align: center;
+    font-size: 23px;
+    color: rgb(85, 85, 85);
+}
+.about-title h1::after{
+    content:"";
+    width: 80px;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: rgb(217, 8, 69);
+    margin-top: 20px;
+}
+.about-part{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.about-part a{
+    color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 15px;
+}
+.about-item{
+    margin: auto;
+    width: 250px;
+}
+.about-item img{
+    width: 40%;
+}
+a h1{
+    font-size: 25px;
+}
+a p{
+    margin-top: 15px;
+}
+.course-bacground{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+.course{
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.course a{
+    width: 300px;
+
+    border: solid rgb(221,221,221) 1px;
+}
+.course a:hover{  
+    position: relative;
+    bottom: 5px;
+    box-shadow:0px 3px 50px 3px rgba(85, 85, 85, 0.15);
+}
+.course-pic img{
+    width: 100%;
+}
+.course-info{
+    text-align: left;
+}
+
+.enroll{
+    background-color: rgb(217,8,69);
+    color: white;
+    font-size: 12px;
+    margin: 5px 15px;
+    padding: 5px 7px;
+    border-radius: 10%;
+    display: inline-block;
+}
+.course-name{
+    box-sizing: border-box;
+    width: 330px;
+    padding: 0 20px;
+    color: rgb(85, 85, 85);
+}
+.teacher{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: rgb(153,153,153);
+    margin-bottom: 10px;
+}
+.teacher::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    /* margin: auto; */
+    background-color: rgb(153,153,153);
+    margin-top: 10px;
+    /* margin-left: -10px; */
+}
+.course-time{
+    box-sizing: border-box;
+    width: 330px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: rgb(153,153,153);
+}
+
+.course-time p{
+    display: inline-block;
+}
+.course-time div{
+    width: 104px;
+    height: 28px;
+    display: inline-block;
+    background-color: rgb(230,230,230);
+    margin-left: 15px;
+}
+.course-time div li{
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 5px;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    
+}
+.course-time div li:nth-child(1){
+    border-right: rgb(153,153,153) 1px solid;
+}
+.course-detail{
+    display: inline-block;
+    width: 228px;
+    height: 59px;
+    background-color: rgb(217,8,69);
+    color: white;
+    line-height: 59px;
+    border-radius: 5%;
+    margin-top: 50px;
+}
+.course-detail:hover{
+    background-color: rgb(200,8,69)
+}
+.recommend-bacground{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(247, 247, 247);
+    padding: 40px 0px 40px 0px;
+}
+.recommend-info{
+    width: 1110px;
+    height: 144px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.recommend-info-pic{
+    width: 100px;
+    height: 100px;
+}
+.recommend-info-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.recommend-info-text{
+    width: 615px;
+    margin-left: 30px;
+    color: rgb(118, 118, 118);
+}
+.recommend-name{
+    font-size: 24px;
+    color: rgb(217,8,69);
+}
+.fake-ball{
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(85, 85, 85, 0.3);
+    margin: 0px 2px;
+    cursor: pointer;
+}
+.ball:nth-child(4){
+    background-color: rgba(184, 25, 57, 1);
+}
+.touch-us{
+    margin: auto;
+    width: 1140px;
+    height: 288px;
+    text-align: center;
+    
+}
+.touch-us:nth-child(1){
+    font-size: 24px;
+    color: rgb(118, 118, 118);
+    background-color: red;
+}
+.touch-us-title{
+    font-size: 24px;
+    color: rgb(85, 85, 85);
+    margin: 30px;
+}
+.touch-us-text{
+    font-size: 18px;
+    color: rgb(95,95,95);
+    line-height: 40px;
+}
+.touch-us-text a{
+    color: rgb(217,8,69);
+    text-decoration: none;
+}
+.touch-us img{
+    margin: 20px;
+}
+.list-background{
+    padding: 40px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    width: 380px;
+    height: 186px;
+    padding: 0px 15px;
+}
+.contact a img{
+    height: 34px;
+}
+.contact-info a{
+    width: 380px;
+    color: rgb(153,153,153);
+    display: block;
+    margin: 5px;
+}
+.contact-info a:hover{
+    color: rgb(217,8,69);
+}
+.phone{
+    height: 100%;
+}
+.list-area{
+    width: 780px;
+    height: 186px;
+    display: flex;
+}
+.list-column{
+    flex-grow: 1;
+
+}
+.list-column{
+    font-size: 14px;
+    padding: 0px 30px;
+}
+.list-column ul li{
+    color: rgb(153,153,153);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.list-column ul li:hover{
+    color: rgb(217, 8, 69);
+}
+.list-column ul li:nth-child(1){
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+    height: 80px;
+    line-height: 60px;
+    background-color: rgb(247, 247, 247);
+    color: rgb(147, 147, 147);
+    border-top: 1px solid rgb(222,226,230);
+}
+.touch-area{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    cursor: pointer;
+}
+.touch-mark{
+    width: 100%;
+}
+.touch-area:hover{
+    border-radius: 50%;
+    box-shadow:3px 3px 3px 3px rgba(85, 85, 85, 0.3);
+}
+
+.up-mark{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
