@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            width: 100%;
+            height: 100vh;
+            background-color: cyan;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 12.5%;
+            height: 25vh;
+            box-sizing: border-box;
+            flex-grow: 1;
+            border: red 1px solid;
+            /* border: red 1px solid; */
+        }
+        .box:active {
+            animation-name: flash; 
+            animation-duration: 0.5s
+
+        }
+        @keyframes flash {
+            0%{
+                background-color: rgb(255, 255, 255);
+                opacity: 0.7;
+            }
+            100%{
+                background-color: rgb(255, 255, 255);
+                opacity: 0;
+            }
+        }
+        audio {
+            width: 100%;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="background">
+        <audio src="https://s3-ap-northeast-1.amazonaws.com/dazedbear-assets/Bluebird.mp3" class="bc" autoplay
+        controls></audio>
+        <div class="box"><audio src="" id="1" controls></audio></div>
+        <div class="box"><audio src="" id="2" controls></audio></div>
+        <div class="box"><audio src="" id="3" controls></audio></div>
+        <div class="box"><audio src="" id="4" controls></audio></div>
+        <div class="box"><audio src="" id="5" controls></audio></div>
+        <div class="box"><audio src="" id="6" controls></audio></div>
+        <div class="box"><audio src="" id="7" controls></audio></div>
+        <div class="box"><audio src="" id="8" controls></audio></div>
+        <div class="box"><audio src="" id="9" controls></audio></div>
+        <div class="box"><audio src="" id="10" controls></audio></div>
+        <div class="box"><audio src="" id="11" controls></audio></div>
+        <div class="box"><audio src="" id="12" controls></audio></div>
+        <div class="box"><audio src="" id="13" controls></audio></div>
+        <div class="box"><audio src="" id="14" controls></audio></div>
+        <div class="box"><audio src="" id="15" controls></audio></div>
+        <div class="box"><audio src="" id="16" controls></audio></div>
+        <div class="box"><audio src="" id="17" controls></audio></div>
+        <div class="box"><audio src="" id="18" controls></audio></div>
+        <div class="box"><audio src="" id="19" controls></audio></div>
+        <div class="box"><audio src="" id="20" controls></audio></div>
+        <div class="box"><audio src="" id="21" controls></audio></div>
+        <div class="box"><audio src="" id="22" controls></audio></div>
+        <div class="box"><audio src="" id="23" controls></audio></div>
+        <div class="box"><audio src="" id="24" controls></audio></div>
+        <div class="box"><audio src="" id="25" controls></audio></div>
+        <div class="box"><audio src="" id="26" controls></audio></div>
+        <div class="box"><audio src="" id="27" controls></audio></div>
+        <div class="box"><audio src="" id="28" controls></audio></div>
+        <div class="box"><audio src="" id="29" controls></audio></div>
+        <div class="box"><audio src="" id="30" controls></audio></div>
+        <div class="box"><audio src="" id="31" controls></audio></div>
+        <div class="box"><audio src="" id="32" controls></audio></div>
+    </div>
+</body>
+</html>

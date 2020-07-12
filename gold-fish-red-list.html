@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #menu-control{
+            position: absolute;
+            opacity: 0;
+        }
+        .header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        .logo{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .logo img{
+            display: block;
+        }
+        .menu-btn{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .menu-btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .menu-btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            box-shadow: #aaa 0px 8px 0px,
+                        #aaa 0px -8px 0px;
+        }
+        nav{
+            width: 80%;
+            height: 100vh;
+            background-color: black;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: 0.5s;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color: chartreuse;
+            border-bottom: chartreuse 1px solid;
+            padding: 10px 20px;
+        }
+        #menu-control:checked ~ .header nav{
+            left: 0%;
+        }
+
+        @media screen and (min-width: 768px){
+            .menu-btn{ 
+                display: none;
+                }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                align-items: center;
+            }
+            nav{
+                display: flex;
+                left: 0px;
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 0px;
+                background-color: transparent;
+            }
+            nav a{
+                border-bottom: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/60/40">
+            </a>
+        </h1>
+        <label for="menu-control" class="menu-btn">
+            <span>選單</span>
+        </label>
+
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+</body>
+</html>
