@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: rgb(0, 4, 255);
+        }
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        .abc{
+            background-color: black;
+            font-size: 40px;
+            border: blueviolet 100px solid;
+        }
+
+    </style>
+</head>
+<body class="abc bbb ccc">
+    <div class="blue"></div>
+    <div class="red"></div>
+    <p>滑鼠： <span></span></p>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(document).mousemove(function(event){ 
+                $("span").text("X: " + event.pageX + ", Y: " + event.pageY)
+                console.log(event.pageX); 
+                var r = event.pageX % 256;
+                var g = event.pageY % 256;
+                var b = Math.round((r + g) / 2);
+                // document.body.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+                $('body').css('background-color', 'rgb(' + r + ', ' + g + ', ' + b + ')');
+            })
+            $(".blue").mousedown(function(event){     
+                $("body").removeClass()
+                $("body").addClass("blue")              
+            })
+            $(".red").mousedown(function(event){ 
+                $("body").removeClass()
+                $("body").addClass("red")
+            });
+        });
+    </script>
+
+</body>
+</html>
