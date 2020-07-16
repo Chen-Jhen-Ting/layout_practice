@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .slider{
+            width: 100%;
+            overflow: hidden;
+        }
+        .slider figure{
+            position: relative;
+            width: 600%;
+            left: 0;
+            animation: 20s move infinite;
+        }
+        .slider figure img{
+            /* width: 20%; */
+            float: left;
+        }
+        @keyframes move{
+            0%{
+                left: 0%;
+            }
+            15%{
+                left: 0%;
+            }
+            20%{
+                left: -100%;
+            }
+            35%{
+                left: -100%;
+            }
+            40%{
+                left: -200%;
+            }
+            55%{
+                left: -200%;
+            }
+            60%{
+                left: -300%;
+            }
+            75%{
+                left: -300%;
+            }
+            80%{
+                left: -400%;
+            }
+            95%{
+                left: -400%;
+            }
+
+            100%{
+                left:-500%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <figure>
+            <img src="https://picsum.photos/1440/500">
+            <img src="https://picsum.photos/1440/500">
+            <img src="https://picsum.photos/1440/500">
+            <img src="https://picsum.photos/1440/500">
+            <img src="https://picsum.photos/1440/500">
+            <img src="https://picsum.photos/1440/500">
+        </figure>
+    </div>
+    
+</body>
+</html>
